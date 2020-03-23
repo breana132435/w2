@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>철이-폐기물처리 정보</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  {% load static %}
+  <link href="{% static 'img/logo2.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'newbizlib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'newbizlib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'newbizlib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'newbizlib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'newbizlib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'newbizlib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- BotUI CSS Files -->
+  <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css" />
+
+  <!-- Dropzone CSS Files -->
+  <link href="{% static 'css/dropzone.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/user_style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: NewBiz
+    Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="#intro" class="scrollto"><img src="{% static 'img/logo.png' %}" style="width:90px;"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#chatbot">Chatbot</a></li>
+          <li><a href="#image">Image</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#teamModal">Team</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix" style="height: 925px; width:600px; margin: auto;padding-top: 175px;margin-bottom:30px;">
+    <div class="row" style="justify-content:center;margin-bottom:30px;">
+      <div class="intro-info">
+        <h2 style="margin-bottom:20px;">무엇이 궁금하신가요?<br><span>대형 폐기물</span>에 대한<br>모든 <span>정보</span>를<br>알려드립니다.</h2>
+        <a href="#chatbot" class="scrollto"><img src="{% static 'img/btn-chat.png'%}" style="width:250px;"></a>
+        <div>
+        </div>
+      </div>
+      <div class="intro-img" style="margin-right:20px;">
+        <img src="{% static 'img/bott.png' %}" style="width:190px;" alt="" class="img-fluid">
+      </div>
+    </div>
+    <hr style="border-top:3px dashed rgba(0, 0, 0, 0.08);">
+    <div class="row" style="justify-content:center;padding-left:10px;margin-top:40px;">
+      <div class="intro-img" style="margin-right:20px;">
+        <img src="{% static 'img/recycle-sign.png' %}" style="width:190px;" alt="" class="img-fluid">
+      </div>
+      <div class="intro-info" style="padding-left:40px;">
+        <h2 style="margin-bottom:20px;">버리실 물품의<br><span>사진</span>을 올려주세요!<br>비용과 처리방법을<br>한 번에 알려드릴게요!</h2>
+        <a href="#image" class="scrollto"><img src="{% static 'img/btn-image.png'%}" style="width:250px;"></a>
+        <div>
+        </div>
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+    <!--==========================
+      Team Section
+    ============================-->
+    <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="divteam">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 bg-info">
+                    <div class="member">
+                      <img src="{% static 'img/person.png' %}" class="img-fluid" alt="">
+                      <div class="member-info">
+                        <div class="member-info-content">
+                          <h4>임홍휘</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 bg-warning">
+                    <div class="member">
+                      <img src="{% static 'img/person.png' %}" class="img-fluid" alt="">
+                      <div class="member-info">
+                        <div class="member-info-content">
+                          <h4>홍한울</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 bg-success">
+                    <div class="member">
+                      <img src="{% static 'img/person.png' %}" class="img-fluid" alt="">
+                      <div class="member-info">
+                        <div class="member-info-content">
+                          <h4>국지훈</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 bg-secondary">
+                    <div class="member">
+                      <img src="{% static 'img/person.png' %}" class="img-fluid" alt="">
+                      <div class="member-info">
+                        <div class="member-info-content">
+                          <h4>박유찬</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--==========================
+    챗봇 QnA
+  ============================-->
+  <!-- section id를 다른 것으로 했을 때 style.css가 안 되는 문제 -->
+  <section id="chatbot" style="background-color:#f9ffec;height: 950px;">
+    <div class="container" style="max-width:1300px;">
+      <header class="section-header">
+        <h3 style="font-family: 'Hi Melody', cursive; font-size: 60px; color:#689a64; margin-bottom:0px;">철이봇</h3>
+        <p style="font-family: 'Hi Melody', cursive; font-size:120%; padding-bottom:20px;">무엇이 궁금하신가요? 똑똑한 챗봇 철이에게 물어보세요!</p>
+      </header>
+      <div class="botui-app-container" id="waste-bot" style="width: 630px; height:650px; margin-bottom: 30px;">
+          <!--<idv><img src="{% static 'img/cactus.png' %}" style="width: 50px;"></idv>-->
+          <div style="background-color:#d6e655; height: 30px;"></div>
+        <bot-ui></bot-ui>
+      </div>
+    </div>
+  </section><!-- #chatbot -->
+
+  <!--==========================
+    이미지 검색
+  ============================-->
+  <!-- section id를 다른 것으로 했을 때 style.css가 안 되는 문제 -->
+  <section id="image" class="section-bg"style="padding-bottom:0px; padding-top:80px;">
+    <div class="container" style="height:550px; text-align-last: center; margin-bottom:25px;padding-top:30px;">
+      <header class="section-header">
+        <h3 style="font-family: 'Hi Melody', cursive; font-size: 60px; color:#689a64; margin-bottom:0px; line-height:70%;">이미지 객체 인식<br><small style="font-size:60%;">(Image Recognition)</small></h3>
+        <p style="font-family: 'Hi Melody', cursive; font-size:120%; margin-bottom:30px;padding-bottom:30px;">폐기물 이미지를 올려주시면 분석을 통해 처리방법을 알려드립니다.</p>
+      </header>
+      <div class="row">
+        <div class="col">
+          <div class="image-upload" style="width:600px; height:300px; display:inline-grid;">
+            {% block content %}
+            <form id='imageUploadForm' class="dropzone needsclick dz-clickable" action="/images" method="post", enctype="multipart/form-data" style="width: 362px; height:310px; justify-self:right; margin-right:50px;">
+              {% csrf_token %}
+              <div class="dz-message needsclick">
+            <img src="{% static 'img/add-image.png' %}" style="width:70px; margin-top:10px;"><div class="row" style="margin-top:40px; place-content:center;">drag&drop or click here!</div>
+              </div>
+            </form>
+          </div>
+          </div>
+
+          <div class="col" style="padding-left:0px;">
+            <div class="btn-group" style="display:table-row;">
+              <select id="item" class="form-control" style="margin-top:60px;">
+                <option>침대</option>
+                <option>의자</option>
+                <option>컴퓨터</option>
+                <option>서랍장</option>
+                <option>장롱</option>
+                <option>가스레인지</option>
+                <option>냉장고</option>
+                <option>책상</option>
+                <option>tv</option>
+                <option>소파</option>
+              </select>
+              <select id="loc" class="form-control" style="margin-top:10px; margin-bottom:30px;">
+                <option>종로구</option>
+                <option>중구</option>
+                <option>용산구</option>
+                <option>성동구</option>
+                <option>광진구</option>
+                <option>동대문구</option>
+                <option>중랑구</option>
+                <option>성북구</option>
+                <option>강북구</option>
+                <option>도봉구</option>
+                <option>노원구</option>
+                <option>은평구</option>
+                <option>서대문구</option>
+                <option>마포구</option>
+                <option>양천구</option>
+                <option>강서구</option>
+                <option>구로구</option>
+                <option>금천구</option>
+                <option>영등포구</option>
+                <option>동작구</option>
+                <option>관악구</option>
+                <option>서초구</option>
+                <option>강남구</option>
+                <option>송파구</option>
+                <option>강동구</option>
+              </select>
+              <div style="color:#495057;">품목과 지역이 맞나요?<br>아래 버튼을 눌러<br>결과를 확인해 보세요.</div>
+
+            </div>
+            {% endblock %}
+          </div>
+      </div>
+      </div>
+      <div style="text-align:center;">
+      <button id="imageResult" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <b>분석결과</b>
+      </button>
+      </div>
+      <div class="collapse" id="collapseExample" style="padding-top:60px;">
+        <div class="container">
+          <div class="section-header">
+            <h3 id="image-output-title" style="font-size: 30px; color:#ffae33; font-weight:bold; padding-bottom:20px;"></h3>
+              <hr>
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <div id="kkk">
+                  <div class="results-table">
+                    <h3 style= "color: #ff887c; font-size:23px;">비용</h3>
+                    <div></div>
+                    <p style="font-size: 11px">*대형폐가전(원형보전) 또는 재활용 가능 시 : <b>무상수거</b> 가능합니다.</p>
+                 </div>
+               </div>
+            </div>
+            <div class="col-4">
+              <div id="bbb">
+                  <div class="results-table">
+                    <h3 style= "color: #ff887c; font-size:23px;">업체</h3>
+                    <div></div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="results-table">
+                 <h3 style= "color: #ff887c; font-size:23px;">신청방법</h3>
+                    <p style="font-size:13px;">1. 동주민센터 : 관할 동주민센터 직접방문 → 접수<br>→ 스티커 부착, 직접 폐기<br>
+                        <br>2. 구청 : 구청 홈페이지 접수<br>→ 방문수거 신청<br>
+                        <br>3. 대형폐가전 : 원형 보전 시 무상수거<br>→ 전체 또는 홈페이지 접수<br>
+                        <br>4. 재활용 : 재활용 가능 시<br>→ 재활용센터에서 무상수거</p>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    <div class="row">
+      <img src="{% static 'img/gg.png' %}" style="width:100%; margin-top:40px;">
+    </div>
+
+    <!--modal-->
+    <div class="modal fade" id="dialog" role="dialog" aria-labelledby="dlogLabel" aria-hidden="true" data-target="#exampleModalCenter">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" style="height:100px;">
+                  <p></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button id="item-yes" type="button" class="btn btn-success">YES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section><!-- #image -->
+
+
+</main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container" style="height:50px;">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
+        </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+    </div>
+  </footer><!-- #footer -->
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'newbizlib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'newbizlib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'newbizlib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'newbizlib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'newbizlib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'newbizlib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'newbizlib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'newbizlib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'newbizlib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'newbizlib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'newbizlib/lightbox/js/lightbox.min.js' %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+
+  <!-- BotUI Javascript File -->
+  <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/botui/build/botui.js"></script>
+  <script src="{% static 'js/waste-bot-bot.js' %}"></script>
+
+  <!-- Dropzone Javascript File -->
+  <script src="{% static 'js/dropzone.js' %}"></script>
+
+  <script type="text/javascript">
+    Dropzone.options.imageUploadForm = {
+      paramName: "file",
+      maxFilesize: 5,
+      maxFiles: 1,
+      acceptedFiles: "image/*",
+      success: function(file, response) {
+        console.log(file)
+        console.log(response)
+
+        $('#dialog').modal('show');
+        $('.modal-body p').text('폐기할 품목이 ' + response.item + '인가요?');
+
+        $("#item-yes").click(function(){
+          $("#item").val(response.item);
+          $("#item").prop('disabled', true);
+          $('#dialog').modal('hide');
+        });
+      }
+    }
+
+  </script>
+
+  <script type="text/javascript">
+      $("#imageResult").click(function(){
+        item = $("#item option:selected").text();
+        loc = $("#loc option:selected").text();
+        input = {"item": item, "location": loc};
+        $.get("/output", input).done(function(data){
+          console.log(data);
+          $("#image-output-title").text('서울시 ' + loc + ' ' + item + ' 폐기 안내입니다.');
+          // 업체
+          th = '';
+          $.each(data.business.contents.header, function(index, value) {
+            th += '<th>' + value + '</th>';
+          });
+          tb = ''
+          $.each(data.business.contents.content, function(index, value) {
+            tb += '<tr>';
+            $.each(value, function(i, v) {
+              tb += '<td>' + v + '</td>';
+            });
+            tb += '</tr>';
+          });
+          content_body = '<table style="font-size: 11px"><thead>' + '<tr>' + th + '</tr>' + '</thead>' + '<tbody>' + tb + '</tbody></table>';
+          if ($("#bbb div div table").length){
+            $("#bbb div div table").remove();
+          }
+          $("#bbb div div").append(content_body);
+          // 비용
+          th = '';
+          $.each(data.price.contents.header, function(index, value) {
+            th += '<th>' + value + '</th>';
+          });
+          tb = ''
+          $.each(data.price.contents.content, function(index, value) {
+            tb += '<tr>';
+            $.each(value, function(i, v) {
+              tb += '<td>' + v + '</td>';
+            });
+            tb += '</tr>';
+          });
+          content_body = '<table style="font-size: 11px"><thead>' + '<tr>' + th + '</tr>' + '</thead>' + '<tbody>' + tb + '</tbody></table>';
+          if ($("#kkk div div table").length){
+            $("#kkk div div table").remove();
+          }
+          $("#kkk div div").append(content_body);
+        });
+      });
+    </script>
+
+</body>
+</html>
