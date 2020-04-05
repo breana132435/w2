@@ -200,7 +200,7 @@ a:focus {
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 10%;
+  margin-bottom : 10px;
   transition: 0.2s;
 }
 
